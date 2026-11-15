@@ -1,0 +1,5 @@
+# dsh-ai-stack-skills bundle patch: mount the packaged skills into the host skill registry.
+# The row is host-plane, so every agent preset's scope chain merges them.
+- insert:
+    - id: dsh-ai-stack-skills
+      name: 'dsh-ai-stack-skills'

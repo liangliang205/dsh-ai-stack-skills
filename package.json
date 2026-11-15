@@ -1,0 +1,83 @@
+{
+  "name": "dsh-ai-stack-skills",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "THIRD_PARTY",
+    "LICENSE"
+  ],
+  "author": "liangliang205",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liangliang205/dsh-ai-stack-skills.git"
+  },
+  "homepage": "https://github.com/liangliang205/dsh-ai-stack-skills#readme",
+  "bugs": {
+    "url": "https://github.com/liangliang205/dsh-ai-stack-skills/issues"
+  },
+  "description": "AI application stack for DeepSeek Harness: 24 skills for a FastAPI + Vue 3 service with a FAISS/bge retrieval pipeline, a local-or-cloud LLM router, and netmiko device collection — plus the backend, frontend, security and review craft around them. Four skills are authored for this stack; the rest are faithful ports with provenance.",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "skills",
+    "fastapi",
+    "vue3",
+    "element-plus",
+    "rag",
+    "faiss",
+    "ollama",
+    "embeddings",
+    "netmiko",
+    "mysql",
+    "security"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "skillSources": {
+      "wshobson/agents": [
+        "api-design-principles",
+        "architecture-patterns",
+        "attack-tree-construction",
+        "modern-javascript-patterns",
+        "python-code-style",
+        "sast-configuration",
+        "security-requirement-extraction",
+        "stride-analysis-patterns",
+        "threat-mitigation-mapping"
+      ],
+      "mattpocock/skills": [
+        "code-review",
+        "codebase-design",
+        "diagnosing-bugs",
+        "domain-modeling",
+        "improve-codebase-architecture",
+        "prototype",
+        "research"
+      ],
+      "anthropics/skills": [
+        "frontend-design",
+        "webapp-testing"
+      ],
+      "forrestchang/andrej-karpathy-skills": [
+        "karpathy-guidelines"
+      ],
+      "getsentry/skills": [
+        "security-review"
+      ]
+    }
+  }
+}
